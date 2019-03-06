@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS example 22 - objects constructors and arrays</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    
+    <script>
+        
+        /*
+        Take the constructor and perform more advanced activities such populating arrays with course objects
+        */
+        
+        // object constructor
+        function Course(title, teacher, level, campus, running, students){
+            this.title = title;
+            this.teacher = teacher;
+            this.level = level;
+            this.campus = campus;
+            this.running = running;
+            this.students = students;
+            this.addStudents = function(){
+                return ++this.students;
+            }
+        }
+        
+        var courses = [
+            new Course('645', 'Emily', 2, 'NCC', true, 24),
+            new Course('641', 'Emily', 1, 'NCC', false, 0),
+            new Course('Automotive Care', 'Jimbo', 1, 'ECC', true, 21)
+        ]
+        
+        console.log(courses);
+        console.log(courses[1].title);
+        console.log(courses[2].title);
+        console.log(courses[0].addStudents());
+        
+        
+    </script>
+</body>
+</html>
