@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS example 23 - dot notation and bracket notation</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    
+    <script>
+        
+        /*
+            
+        */
+         // object constructor
+        function Course(title, teacher, level, campus, running, students){
+            this.title = title;
+            this.teacher = teacher;
+            this.level = level;
+            this.campus = campus;
+            this.running = running;
+            this.students = students;
+            this.addStudents = function(){
+                return ++this.students;
+            }
+        }
+        
+        var course1 = new Course('Comm 641', 'Emily', 1, 'NCC', false, 0);
+        var course2 = new Course('javaScript', 'Zak', 2, 'NCC', true, 17);
+        // dot notation
+        
+        console.log(course1.title); // dot notation
+        console.log(course2['title']); // bracket notation
+        
+        WP:images, 01-01, new course
+        course['WP:images'];
+        
+        
+    </script>
+</body>
+</html>
