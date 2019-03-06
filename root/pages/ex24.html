@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS example 24 - Closures </title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    
+    <script>
+        
+        
+        /*
+     function doSomeMath() {
+         var a = 6;
+         var b = 4;
+         
+         function multiply(){
+             var result = a*b;
+             return result;
+         }
+         return multiply;
+     }
+        var theResult = doSomeMath();
+        console.log('The result is ' + theResult); 
+        
+        console.log('The result is ' + theResult());
+        */
+        
+        
+        function emConvertor(pixels) {
+            var baseFontSize = 16;
+            
+            function convertIt() {
+                return pixels/baseFontSize;
+            }
+            return convertIt;
+        }
+        
+        var smSize = emConvertor(12);
+        var medSize = emConvertor(18);
+        var lgSize = emConvertor(24);
+        var xlSize = emConvertor(40);
+        
+        
+        
+        console.log('Small Size: ', smSize(), 'ems');
+        console.log('Medium Size: '+ medSize() + 'ems');
+        console.log('Large Size: ', lgSize());
+        console.log('Xlarge Size: ', xlSize());
+        
+    </script>
+</body>
+</html>
