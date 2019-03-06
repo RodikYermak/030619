@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS example 21 - objects constructors</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    
+    <script>
+        
+        /*
+        Object constructosrs are like templates for objects that we want to use over and over.
+        */
+        
+        // object constructor
+        function Course(title, teacher, level, campus, running, students){
+            this.title = title;
+            this.teacher = teacher;
+            this.level = level;
+            this.campus = campus;
+            this.running = running;
+            this.students = students;
+            this.addStudents = function(){
+                return ++this.students;
+            }
+        }
+        
+        var course1 = new Course('Comm 641', 'Emily', 1, 'NCC', false, 0);
+        var course2 = new Course('javaScript', 'Zak', 2, 'NCC', true, 17);
+        
+        console.log(course1);
+        console.log(course2);
+        
+        
+    </script>
+</body>
+</html>
