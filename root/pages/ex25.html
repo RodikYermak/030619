@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS example 25 - Hungarian Notation </title>
+</head>
+<body>
+    <h1 id="heading">Welcome</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sunt, voluptates praesentium illo ab ad inventore vitae, ipsam cumque laboriosam placeat deserunt. Illo deserunt est nemo provident vel explicabo sint?</p>
+    
+    <script>
+        
+       /*
+       Hungarian notation is a method of showing variable and/or function type
+       */ 
+        
+        var carType = 'vw';
+        var yearBuild = 1972;
+        var passedClass = true;
+        
+        var strCarType = 'vw';
+        var numYearBuilt = 1972;
+        var boolPassedClass = true;
+        
+        var MyDog = new Object; // object
+        var ALLCAPS; // const
+        
+//        document.body.innerHTML = '<h1>Hello</h1>';
+        
+//        document.getElementById('heading').innerHTML = 'hi there';
+        
+        console.log(document.body.children);
+        
+        document.write('<h3>I have a ' + strCarType + ' , and it was made in ' + numYearBuilt + '</h3>');
+        
+        var positiveMsg = "She said \"You're great!\"";
+        console.log(positiveMsg);
+        
+        var myNum = 5;
+        console.log(myNum);
+        myNum--;
+        console.log(myNum);
+        
+        
+        
+        console.log(typeof(positiveMsg));
+        console.log(typeof myNum);
+        
+        var favColors = ['blue', 'teal', 'yellow'];
+        
+        if(a==b && c==d) {} // AND
+        if(a==b || c==d) {} // OR
+        
+        
+       
+        
+    </script>
+</body>
+</html>
