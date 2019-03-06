@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS example 20 - objects overview</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    
+    <script>
+        var course = new Object();
+        
+//        course.title = '644';
+//        course.teacher = "Emily";
+//        course.level = 2;
+//        course.campus = 'NCC';
+//        course.running = true;
+        
+        var course = {
+            title: 'JavaScript',
+            teacher: 'Emily',
+            level: 2,
+            campus: 'NCC',
+            running: true,
+            students: 20,
+            addStudents: function(){
+                return ++course.students;
+            }
+        }
+        
+        
+        
+        console.log(course);
+        // check a specific property we just use the objectName.propertyName
+        console.log(course.addStudents()); // run the addStudent method
+        
+    </script>
+</body>
+</html>
