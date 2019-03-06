@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS example 18 - Variable Scope</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    
+    <script>
+        /*
+        function myNum(a,b) {
+            var sum = a+b;
+            var private = 'hidden';
+            console.log(sum);
+         }
+        
+        myNum(1,2);
+        
+        var a=5, b=4, exposed = 'seen';
+        myNum(a,b); // return 9;
+        */
+        
+        var factor = 7; // global scope
+        
+        function multiply() {
+            var num = 4; //local scope
+            var result = factor * num;
+            return result;
+            
+        }
+        
+        function divide(){
+            var num = 10;
+            var result = factor/num;
+            return result;
+        }
+        
+        
+        var getResult = multiply();
+        var getDivResult = divide();
+        
+    </script>
+</body>
+</html>
